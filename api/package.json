@@ -1,0 +1,18 @@
+{
+  "name": "url-shortener",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.13.0",
+    "dotenv": "^16.4.5",
+    "elysia": "^1.0.15",
+    "nanoid": "^5.0.7",
+    "prisma": "^5.13.0"
+  }
+}
