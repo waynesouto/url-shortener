@@ -8,7 +8,7 @@ dotenv.config();
 const app = new Elysia()
   .use(
     cors({
-      allowedHeaders: "*",
+      origin: "https://shortener.brkt.com.br",
       methods: "*",
     })
   )
