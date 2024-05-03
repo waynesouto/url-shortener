@@ -6,8 +6,6 @@ export const fetchUrl = new Elysia().get(
   async ({ params, set }) => {
     const { uniqueId } = params;
 
-    console.log("test");
-
     const url = await db.query.urls.findFirst({
       where(fields, { eq }) {
         return eq(fields.uniqueId, uniqueId);
