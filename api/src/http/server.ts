@@ -1,3 +1,4 @@
+import cors from "@elysiajs/cors";
 import * as dotenv from "dotenv";
 import Elysia from "elysia";
 import { fetchUrl } from "./routes/fetch-url";
@@ -5,6 +6,12 @@ import { shortenUrl } from "./routes/shorten-url";
 dotenv.config();
 
 const app = new Elysia()
+  .use(
+    cors({
+      allowedHeaders: "*",
+      methods: "*",
+    })
+  )
   .use(shortenUrl)
   .use(fetchUrl)
   .onError(({ code, error, set }) => {
