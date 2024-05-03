@@ -1,4 +1,4 @@
-# 🍕 url-shortener
+#  🔗 url-shortener
 
 URL shortener app back-end built with TypeScript, Drizzle a ElysiaJS and front-end built with Typescript, React, Vite and Shadcn-ui.
 
