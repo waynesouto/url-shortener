@@ -13,6 +13,7 @@ const app = new Elysia()
   )
   .use(shortenUrl)
   .use(fetchUrl)
+  .get("/health", () => "health check")
   .onError(({ code, error, set }) => {
     switch (code) {
       case "VALIDATION": {
