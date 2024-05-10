@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Clipboard, Github, Link2, LoaderCircle } from "lucide-react";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
@@ -127,6 +128,7 @@ export function App() {
         </main>
       </div>
       <Toaster />
+      <SpeedInsights />
     </ThemeProvider>
   );
 }
