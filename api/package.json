@@ -6,8 +6,10 @@
   "author": "Wayne Souto <soutowhs@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build:prod": "bun build --compile --minify-whitespace --minify-syntax --target bun --outfile server src/http/server.ts",
     "generate": "drizzle-kit generate:pg",
-    "dev": "bun --watch src/http/server.ts",
+    "start:prod": "bun server",
+    "start:dev": "bun --watch src/http/server.ts",
     "migrate": "bun src/db/migrate.ts"
   },
   "devDependencies": {

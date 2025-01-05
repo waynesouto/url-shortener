@@ -3,6 +3,7 @@ import * as dotenv from "dotenv";
 import Elysia from "elysia";
 import { fetchUrl } from "./routes/fetch-url";
 import { shortenUrl } from "./routes/shorten-url";
+import { env } from "@/env";
 dotenv.config();
 
 const app = new Elysia()
@@ -34,8 +35,7 @@ const app = new Elysia()
     }
   });
 
-app.listen(3000, () =>
-  console.log(
-    `🔥 HTTP server running at ${app.server?.hostname}:${app.server?.port}`
-  )
+app.listen(
+  env.PORT || 3000,
+  () => console.log(`🔥 HTTP server running at ${app.server?.hostname}:${app.server?.port}`)
 );
