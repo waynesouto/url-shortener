@@ -70,7 +70,7 @@ export function App() {
           <h1 className="text-xl font-bold">url-shortener</h1>
 
           <div className="flex items-center gap-3">
-            <a href="https://github.com/soutowhs" target="_blank">
+            <a href="https://github.com/waynesouto" target="_blank">
               <Button variant="outline" size="icon">
                 <Github className="h-[1.2rem] w-[1.2rem]" />
               </Button>
