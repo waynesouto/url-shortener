@@ -14,6 +14,7 @@ import {
   CardTitle,
 } from "./components/ui/card";
 import { Input } from "./components/ui/input";
+import { Analytics } from "@vercel/analytics/react";
 
 interface ShortenResponse {
   shortUrl: string;
@@ -129,6 +130,7 @@ export function App() {
       </div>
       <Toaster />
       <SpeedInsights />
+      <Analytics />
     </ThemeProvider>
   );
 }
